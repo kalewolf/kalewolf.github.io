@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <style>
+        #blue-text{
+            color:blue;
+        }
+        #red-text{
+            color:red;
+        }
+        #green-text{
+            color:green;
+            font-size: 24px;
+            text-align:right;
+        }
+
+        h1{
+            color:mintcream;
+        }
+        h2{
+            color:crimson;
+        }
+        .special{
+            color:chartreuse;
+            font-size:100px;
+            background-color:turquoise;
+        }
+        .span1{
+            color:red;
+            background-color:black;
+            font-size:60px;
+        }
+        .centered-img{
+            display:block;
+            margin:10px auto;
+            width:50%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color:darkblue;">Today we will learn some CSS!</h1>
+    <h2>This is how we add style with in line css</h2>
+    <p>this paragraph has no style</p>
+    <p style="color:mediumaquamarine">this is a sea green colored paragraph</p>
+    <p style="color:rgb(66, 255, 198); font-size:50px;">this is an rgb and font = 50 px paragraph</p>
+    <p style="color:red; font-size:24px; text-align:center; background-color:coral;">this is centered, red, font = 24, and coral background paragraph</p>
+    
+    <h2>This is how we add style with internal CSS</h2>
+    <p id="blue-text">I want this text to be blue</p>
+    <p id="red-text">this one to be red</p>
+    <p id="green-text">this one to be green, 24px, and right allignment</p>
+
+    <h2>This is how we divs and spans</h2>
+    <div class="special">
+        <h3>this is a div example</h3>
+        <p>this paragraph is part of a div. And <span class="span1">this is a span inside of my div</span></p>
+        <p>this paragraph is still part of a div</p>
+        <h4>h4 just for kicks</h4>
+    </div>
+
+    <img src="" alt="this should be an image" class="centered-img">
+
+
+</body>
+</html>
