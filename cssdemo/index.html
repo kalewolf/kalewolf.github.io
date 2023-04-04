@@ -5,65 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Demo</title>
-    <style>
-        #blue-text{
-            color:blue;
-        }
-        #red-text{
-            color:red;
-        }
-        #green-text{
-            color:green;
-            font-size: 24px;
-            text-align:right;
-        }
-
-        h1{
-            color:mintcream;
-        }
-        h2{
-            color:crimson;
-        }
-        .special{
-            color:chartreuse;
-            font-size:100px;
-            background-color:turquoise;
-        }
-        .span1{
-            color:red;
-            background-color:black;
-            font-size:60px;
-        }
-        .centered-img{
-            display:block;
-            margin:10px auto;
-            width:50%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 style="background-color:darkblue;">Today we will learn some CSS!</h1>
-    <h2>This is how we add style with in line css</h2>
-    <p>this paragraph has no style</p>
-    <p style="color:mediumaquamarine">this is a sea green colored paragraph</p>
-    <p style="color:rgb(66, 255, 198); font-size:50px;">this is an rgb and font = 50 px paragraph</p>
-    <p style="color:red; font-size:24px; text-align:center; background-color:coral;">this is centered, red, font = 24, and coral background paragraph</p>
-    
-    <h2>This is how we add style with internal CSS</h2>
-    <p id="blue-text">I want this text to be blue</p>
-    <p id="red-text">this one to be red</p>
-    <p id="green-text">this one to be green, 24px, and right allignment</p>
-
-    <h2>This is how we divs and spans</h2>
-    <div class="special">
-        <h3>this is a div example</h3>
-        <p>this paragraph is part of a div. And <span class="span1">this is a span inside of my div</span></p>
-        <p>this paragraph is still part of a div</p>
-        <h4>h4 just for kicks</h4>
-    </div>
-
-    <img src="" alt="this should be an image" class="centered-img">
-
-
+    <ul class="nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="image_formats.html">Image Formats</a></li>
+    </ul>
+    <h1>Rookie Data Storage For Visuals</h1>
+    <h2>The Bit</h2>
+    <p>To first understand pictures you need to understand how computers store data. Most computers today store data using bits, these bits contain an on and an off state or better known as 0 and 1. This bit is the basics of of data storage.</p>
+    <label class="switch">
+        <input class="switch-input" type="checkbox">
+        <span class="switch-label" data-on="On" data-off="Off"></span> 
+        <span class="switch-handle"></span> 
+    </label>
+    <h2>The Byte</h2>
+    <p>Alone this bit is quite useless because it can only store 2 events (on and off) but when paired with other bits into a byte (8 bits) the data storage grows exponentially to being able to store 256 possible combination of 0s and 1s or events. This also gives computers the ability to store numbers from 0-255. </p>
+    <img src="image/byte_img.png" alt="Image of a computer byte">
+    <h2>RGB</h2>
+    <p>The RGB spectrum is used by most computers and softwares for calculating a color value. Each of the colors (red, green, and blue) are stored in one byte of imformation (0-255). Because of this range of <span class="red">reds</span>, <span class="blue">blues</span>, and <span class="green">greens</span> there are 16,777,216 possible <span class="color">colors</span> that a computer can show. </p>
+    <label for="color_picker">You can see this here:</label> <br>
+    <input type="color" id="color_picker" value="#000000">
 </body>
 </html>
