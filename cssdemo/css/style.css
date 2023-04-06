@@ -23,7 +23,7 @@ ul.nav li a{
     color: rgb(216, 216, 216);
     text-decoration: none;
 }
-p,h1,h2,label {
+p,h1,h2,label,li,address  {
     color:rgb(216, 216, 216);
 }
 p,li,label,address {
