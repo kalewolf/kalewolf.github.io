@@ -26,3 +26,6 @@ ul.nav li a{
 ul.nav a:hover {
     background-color: rgb(80, 80, 80);
 }
+.active {
+    background-color: rgb(45, 45, 45);
+}
