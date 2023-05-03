@@ -15,10 +15,22 @@
             padding: 0px;
         }
 
+        .title{
+            background-color: dimgray;
+            grid-column: 1 / span 4;
+            grid-row: 2;
+            text-align: center;
+        }
+
+        .title h1{
+            font-size: 50px;
+            margin: 0px;
+        }
+
         .main-image{
             padding: 0px;
             grid-column: 1 / span 3;
-            grid-row: 2;
+            grid-row: 3;
             background-color: transparent;
         }
 
@@ -30,27 +42,27 @@
 
         .description{
             grid-column: 4;
-            grid-row: 2;
+            grid-row: 3;
         }
 
         .main1{
             grid-column: 1 / span 2;
-            grid-row: 3;
+            grid-row: 4;
         }
 
         .main2{
             grid-column: 3;
-            grid-row: 3;
+            grid-row: 4;
         }
 
         .resources{
             grid-column: 4;
-            grid-row: 3 / span 2;
+            grid-row: 4 / span 2;
         }
 
         .video{
             grid-column: 1 / span 2;
-            grid-row: 4;
+            grid-row: 5;
             padding: 0% 0%;
             margin: 0%;
             background-color: transparent;
@@ -66,31 +78,31 @@
 
         .video-description{
             grid-column: 3;
-            grid-row: 4;
+            grid-row: 5;
         }
 
         .main3{
             grid-column: 1;
-            grid-row: 5;
+            grid-row: 6;
         }
 
         .main4{
             grid-column: 2;
-            grid-row: 5;
+            grid-row: 6;
         }
 
         .main5{
             grid-column: 3  / span 2;
-            grid-row: 5;
+            grid-row: 6;
         }
 
         .why-java{
             grid-column: 1 / span 4;
-            grid-row: 6;
+            grid-row: 7;
         }
 
         .bottom-section{
-            grid-row: 7;
+            grid-row: 8;
             grid-column: 1 / span 4;
             /* make a mini grid */
             display:grid;
@@ -137,6 +149,15 @@
 </head>
 <body>
     <div class="grid-container">
+        <div class="grid-item title">
+            <h1>
+                Home - Java Learner
+            </h1>
+            <p>
+                By Ryan Li
+            </p>
+        </div>
+
         <div class="grid-item navmenu unmargin">
             <ul class="nav">
                 <li class="active">
@@ -165,7 +186,7 @@
             <iframe src="https://www.youtube.com/embed/mAtkPQO1FcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <div class="grid-item video-description">video disc</div>
+        <div class="grid-item video-description">video description</div>
 
         <div class="grid-item main3">m3</div>
 
