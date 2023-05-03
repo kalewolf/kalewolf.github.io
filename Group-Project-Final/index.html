@@ -6,16 +6,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navmenu{
+            text-align: center;
+            padding: 0px;
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            padding: 0px;
+        }
+
+        .main-image{
+            padding: 0px;
+            grid-column: 1 / span 3;
+            grid-row: 2;
+            background-color: transparent;
+        }
+
+        .main-image img{
+            width:100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .description{
+            grid-column: 4;
+            grid-row: 2;
+        }
+
+        .main1{
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .main2{
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+        .resources{
+            grid-column: 4;
+            grid-row: 3 / span 2;
+        }
+
+        .video{
+            grid-column: 1 / span 2;
+            grid-row: 4;
+            padding: 0% 0%;
+            margin: 0%;
+            background-color: transparent;
+        }
+
+        .video iframe{
+            /* original size 560px*315px, scale up 155% */
+            width: 868px;
+            height: 488px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .video-description{
+            grid-column: 3;
+            grid-row: 4;
+        }
+
+        .main3{
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        .main4{
+            grid-column: 2;
+            grid-row: 5;
+        }
+
+        .main5{
+            grid-column: 3  / span 2;
+            grid-row: 5;
+        }
+
+        .why-java{
+            grid-column: 1 / span 4;
+            grid-row: 6;
+        }
+
+        .bottom-section{
+            grid-row: 7;
+            grid-column: 1 / span 4;
+            /* make a mini grid */
+            display:grid;
+            grid-template-columns: 25% 25% 25% 23%;
+            grid-template-rows: auto auto auto;
+            gap: 10px 10px;
+        }
+
+        .bottom-section h1{
+            color: black;
+        }
+
+        .bottom-grid-item{
+            font-size: small;
+            text-align: left;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+
+        .bot-logo.a.img{
+            width: 100%;
+        }
+
+        .bot-logo{
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .about{
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .download{
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .more{
+            grid-column: 4;
+            grid-row: 1;
+        }
+    </style>
 </head>
 <body>
-    <ul class="nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
-        <li><a href="Code-Challenges.html">Code Challenges</a></li>
-        <li><a href="table-docs.html">Table Documents</a></li>
-        <li><a href="why-code.html">Why Code?</a></li>
-    </ul>
-    <h1>Home Page</h1>
-    <h2>The Basics of Java</h2>
+    <div class="grid-container">
+        <div class="grid-item navmenu unmargin">
+            <ul class="nav">
+                <li class="active">
+                    <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
+                </li>
+                <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
+                <li><a href="Code-Challenges.html">Code Challenges</a></li>
+                <li><a href="table-docs.html">Table Documents</a></li>
+                <li><a href="why-code.html">Why Code?</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-item main-image">
+            <img src="images\nathanbg.jfif" alt="Placeholder Image">
+        </div>
+
+        <div class="grid-item description"> description of the image. This image to the left is a placeholder for now </div>
+
+        <div class="grid-item main1">m1</div>
+
+        <div class="grid-item main2">m2</div>
+
+        <div class="grid-item resources">resource</div>
+
+        <div class="grid-item video">
+            <iframe src="https://www.youtube.com/embed/mAtkPQO1FcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="grid-item video-description">video disc</div>
+
+        <div class="grid-item main3">m3</div>
+
+        <div class="grid-item main4">m4</div>
+
+        <div class="grid-item main5">m5</div>
+
+        <div class="grid-item why-java">why java?</div>
+
+        <div class="grid-item bottom-section">
+            <div class="grid-item bot-logo">
+                <a href="index.html" class="logo-link-wrap">
+                    <img src="images/java.png" alt="Java Logo - Java Tutorial">
+                </a>
+            </div>
+
+            <div class="grid-item about">
+                <h1>
+                    About
+                </h1>
+            </div>
+
+            <div class="grid-item download">
+                <h1>
+                    Downloads
+                </h1>
+            </div>
+
+            <div class="grid-item more">
+                <h1>
+                    More Tutorials
+                </h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

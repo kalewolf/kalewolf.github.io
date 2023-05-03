@@ -2,19 +2,27 @@ body {
     background-color: rgb(59, 59, 59);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 ul {
     color: rgb(216, 216, 216);
 }
+
 .nav{
     list-style-type: none;
     background-color: rgb(128, 128, 128);
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: 40px;
+}
+
+.logo{
+    width: 50px;
 }
 
 ul.nav li {
     float: left;
+    padding: auto;
 }
 
 ul.nav li a{
@@ -23,6 +31,9 @@ ul.nav li a{
     color: rgb(216, 216, 216);
     text-decoration: none;
 }
+ul.nav li a.logo-link-wrap{
+    padding: 0px 0px;
+}
 ul.nav a:hover {
     background-color: rgb(80, 80, 80);
 }
@@ -30,7 +41,6 @@ ul.nav a:hover {
     background-color: rgb(45, 45, 45);
 }
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -40,4 +50,18 @@ ul.nav a:hover {
 }
 p,h1,h2,label,li,address  {
     color:rgb(216, 216, 216);
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 23%;
+    grid-template-rows: auto auto auto;
+    gap: 10px 10px;
+}
+
+.grid-item{
+    font-size: small;
+    text-align: left;
+    padding: 20px;
+    background-color: aliceblue;
 }
