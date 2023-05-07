@@ -17,14 +17,24 @@
         padding: 0px;
     }
 
+    .title{
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
 
-    .table{
+    .subtitle{
         grid-column: 1 / span 4;
         grid-row: 3;
     }
 
+    .table{
+        grid-column: 1 / span 4;
+        grid-row: 4;
+    }
 
-    <!--New Feature-->
+
+ 
+    
     table,
         th,
         td {
@@ -39,118 +49,93 @@
         table{
             width:100%;
             background-color:rgb(168, 166, 171);
-            border-collapse: collapse;
+            border-collapse: collapse; /*New Feature*/ 
             
         }
 
+       
         tr{
             border-bottom: 2px solid #ddd; 
         }
  
-        tr:hover {background-color:rgb(159, 175, 180)} <!--New Feature-->
+        tr:hover {background-color:rgb(159, 175, 180)} /*New Feature*/ 
 
-    .subtitle{
-        grid-column: 1 / span 4;
-        grid-row: 2;
-    }
 
-    .second-grid{
-        display:grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        gap: 10px 10px;
-    }
-
-    .second-grid{
-        grid-column: 1 / span 4;
-        grid-row: 3;
-    }
-
-    .fuction-video{
-        grid-column:2;
-        grid-row: 1;
+    .function-video{
+        grid-column:1;
+        grid-row: 4;   
     }
 
     .animated-words{
-        grid-column: 1;
-        grid-row: 1;
+        grid-column: 3;
+        grid-row: 5;
     }
-
 
 
 </style>
 <body>
 
+    <div class="grid-container">
 
-
-
-<div class="grid-container">
-
-    
-    <div class="grid-item navmenu unmargin">
-        <ul class="nav">
-            <li>
-                <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
-            </li>
-            <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
-            <li><a href="Code-Challenges.html">Code Challenges</a></li>
-            <li class="active"><a href="table-docs.html">Table Documents</a></li>
-            <li><a href="why-code.html">Why Code?</a></li>
-        </ul>
-    </div>
-
-    <div class="title">
-        <h1>Table Docs</h1>
-    </div>
-
-    <div class="table">
-        <table>
-            <tr>
-                <th>Function Name</th>
-                <th>Parameters</th>
-                <th>What it Does</th>
-            </tr>
-            <tr>
-                <td>Insert Function</td>
-                <td>Insert Parameters</td>
-                <td>Insert What it does</td>
-            </tr>
-            <tr>
-                <td>Insert Function</td>
-                <td>Insert Parameters</td>
-                <td>Insert What it does</td>
-            </tr>
-            <tr>
-                <td>Insert Function</td>
-                <td>Insert Parameters</td>
-                <td>Insert What it does</td>
-            </tr>
-            <tr>
-                <td>Insert Function</td>
-                <td>Insert Parameters</td>
-                <td>Insert What it does</td>
-            </tr>
-        </table>
-
-        <div class="second-grid">
-            <div class="function-video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lXh1MotyH2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-
-            <div class="animated-words">
-                <h2>Watch to learn more</h2>
-            </div>
+        <div class="grid-item navmenu unmargin">
+            <ul class="nav">
+                <li>
+                    <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
+                </li>
+                <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
+                <li><a href="Code-Challenges.html">Code Challenges</a></li>
+                <li class="active"><a href="table-docs.html">Table Documents</a></li>
+                <li><a href="why-code.html">Why Code?</a></li>
+            </ul>
         </div>
+    
+        <div class=" grid-item title">
+            <h1 style="text-align: center; color: black;">Table Docs</h1>
+        </div>
+        
+        <div class=" grid-item subtitle">
+            <h2 style="color:black; text-align: center;">Here are a list of functions that might be useful for you to know.</h2>
+        </div>
+    
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Function Name</th>
+                    <th>Parameters</th>
+                    <th>What it Does</th>
+                </tr>
+                <tr>
+                    <td>Insert Function</td>
+                    <td>Insert Parameters</td>
+                    <td>Insert What it does</td>
+                </tr>
+                <tr>
+                    <td>Insert Function</td>
+                    <td>Insert Parameters</td>
+                    <td>Insert What it does</td>
+                </tr>
+                <tr>
+                    <td>Insert Function</td>
+                    <td>Insert Parameters</td>
+                    <td>Insert What it does</td>
+                </tr>
+                <tr>
+                    <td>Insert Function</td>
+                    <td>Insert Parameters</td>
+                    <td>Insert What it does</td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="fuction-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lXh1MotyH2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    
+        <div class="animated-words">
+            <h2>Watch to learn more</h2>
+        </div>
+    
     </div>
-
-
-
-    <div class="subtitle">
-        <h2>Here are a list of functions that might be useful for you to know.</h2>
-    </div>
-
-</div>
    
 
     <div class="footer">

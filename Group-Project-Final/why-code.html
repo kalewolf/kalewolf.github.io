@@ -17,66 +17,60 @@
             grid-row: 1;
             padding: 0px;
         }
+    
+    .title{
+            grid-column:1 / span 4;
+            grid-row: 2
+            
+
+        }
 
 
     .problem-solving{
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 3;
+       
     }
     .tech-future{
         grid-column: 2 ;
-        grid-row: 2;
+        grid-row: 3;
+      
     }
 
     .job-opportunities{
         grid-column: 3;
-        grid-row: 2;
+        grid-row: 3;
+        
     }
 
     .creativity{
         grid-column: 4;
-        grid-row: 2;
-    }
-
-    .second-grid{
-        display:grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        gap: 10px 10px;
-    }
-
-    .second-grid{
-        grid-column: 1 / span 4;
         grid-row: 3;
+       
     }
-
 
     .video{
         grid-column: 2;
-        grid-row: 1;
+        grid-row: 4;
 
         
     }
 
     .animated-words{
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 4;
         text-align: center;
       
     }
 
- 
-
+    .grid-item{
+        color:black;
+    }
 
  
 </style>
 
 <body>
-
-    
-
-
-
 
     <div class="grid-container">
         <div class="grid-item navmenu unmargin">
@@ -91,40 +85,39 @@
             </ul>
         </div>
 
-        <div class="title">
-            <h1 style="text-align: center;">Why You Should Learn to Code</h1> <br>
+        <div class=" grid-item title">
+            <h1 style="text-align: center; color: black;">Why You Should Learn to Code</h1> <br>
         </div>
 
 
         <div class="grid-item problem-solving">
-            <h2>Coding helps your problem solving skills</h2>
-            <p>insert more writing here</p> <br>
+            <h2 style="color:black;">Coding helps your problem solving skills</h2>
+            <p style="color:black;">When coding, you are always trying to complete some sort of task or challenge, so applying what you know to perform a task requires you to use your brain. Also, when coding you will inevitably face bugs and challenges, so working your way around them you will also strengthen your problem-solving.<p> <br>
         </div>
     
         <div class="grid-item job-opportunities">
-            <h2>Lots of Job Opportunities</h2>
-            <p>insert more writing here</p> <br>
+            <h2 style="color:black;">Lots of Job Opportunities</h2>
+            <p style="color:black;">Due to the boom in technology, there is a high demand for programmers. Even if you don't want to go into a computer science field you may end up working with programmers. In that case, it would be helpful to have some understanding of coding because this may improve you ability to work together as a team.</p> <br>
         </div>
     
         <div class="grid-item tech-future">
-            <h2>Technologies are the Future</h2>
-            <p>insert more writing here</p> <br>
+            <h2 style="color:black;">Technologies are the Future</h2>
+            <p style="color:black;">insert more writing here</p> <br>
         </div>
     
         <div class="grid-item creativity">
-            <h2>You Can Express Your Creativity</h2>
-            <p>insert more writing here</p> <br>
+            <h2 style="color:black;">You Can Express Your Creativity</h2>
+            <p style="color:black;">insert more writing here</p> <br>
         </div>
 
-        <div class="second-grid">
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_zfXWElRdik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-
-            <div class="animated-words">
-                <h2>Watch to learn more</h2>
-            </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_zfXWElRdik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+
+        <div class="animated-words">
+            <h2>Watch to learn more</h2>
+        </div>
+        
 
         <!--
         #sqaure{
@@ -161,7 +154,7 @@
 
 
      
-    </div>
+    
 
 
 
