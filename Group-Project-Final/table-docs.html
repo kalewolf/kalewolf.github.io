@@ -9,69 +9,121 @@
 </head>
 
 <style>
-    .footer{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: azure;
-        color:black;
-        text-align: center; 
+    .navmenu{
+        text-align: center;
+        padding: 0px;
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        padding: 0px;
     }
 
+
+    .table{
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+
+
+    <!--New Feature-->
     table,
         th,
         td {
-            border: 1px solid black;
-            border-collapse: collapse;
             padding: 10px;
         }
 
         th{
-            background-color:purple;
-            color: white
-
+            background-color:rgb(124, 148, 169);
+            color: white;
         }
+
+        table{
+            width:100%;
+            background-color:rgb(168, 166, 171);
+            border-collapse: collapse;
+            
+        }
+
+        tr{
+            border-bottom: 2px solid #ddd; 
+        }
+ 
+        tr:hover {background-color:rgb(159, 175, 180)} <!--New Feature-->
+        
+        
+
+    
+    .title{
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+
+    .subtitle{
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+
+
+
 </style>
 <body>
-    <ul class="nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
-        <li><a href="Code-Challenges.html">Code Challenges</a></li>
-        <li><a href="table-docs.html">Table Documents</a></li>
-        <li><a href="why-code.html">Why Code?</a></li>
-    </ul>
 
-    <h1>Table Docs</h1>
-    <h2>Here are a list of functions that might be useful for you to know.</h2>
-    
-    <table>
-        <tr>
-            <th>Function Name</th>
-            <th>Parameters</th>
-            <th>What it Does</th>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-    </table>
+    <div class="grid-item navmenu unmargin">
+        <ul class="nav">
+            <li>
+                <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
+            </li>
+            <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
+            <li><a href="Code-Challenges.html">Code Challenges</a></li>
+            <li class="active"><a href="table-docs.html">Table Documents</a></li>
+            <li><a href="why-code.html">Why Code?</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+<div class="grid-container">
+    <div class="table">
+        <table>
+            <tr>
+                <th>Function Name</th>
+                <th>Parameters</th>
+                <th>What it Does</th>
+            </tr>
+            <tr>
+                <td>Insert Function</td>
+                <td>Insert Parameters</td>
+                <td>Insert What it does</td>
+            </tr>
+            <tr>
+                <td>Insert Function</td>
+                <td>Insert Parameters</td>
+                <td>Insert What it does</td>
+            </tr>
+            <tr>
+                <td>Insert Function</td>
+                <td>Insert Parameters</td>
+                <td>Insert What it does</td>
+            </tr>
+            <tr>
+                <td>Insert Function</td>
+                <td>Insert Parameters</td>
+                <td>Insert What it does</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="title">
+        <h1>Table Docs</h1>
+    </div>
+
+    <div class="subtitle">
+        <h2>Here are a list of functions that might be useful for you to know.</h2>
+    </div>
+
+</div>
+   
 
     <div class="footer">
         <p>Made by Arya Kuttiyan</p>
