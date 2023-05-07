@@ -48,18 +48,32 @@
         }
  
         tr:hover {background-color:rgb(159, 175, 180)} <!--New Feature-->
-        
-        
-
-    
-    .title{
-        grid-column: 1 / span 4;
-        grid-row: 1;
-    }
 
     .subtitle{
         grid-column: 1 / span 4;
         grid-row: 2;
+    }
+
+    .second-grid{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        gap: 10px 10px;
+    }
+
+    .second-grid{
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+
+    .fuction-video{
+        grid-column:2;
+        grid-row: 1;
+    }
+
+    .animated-words{
+        grid-column: 1;
+        grid-row: 1;
     }
 
 
@@ -67,6 +81,12 @@
 </style>
 <body>
 
+
+
+
+<div class="grid-container">
+
+    
     <div class="grid-item navmenu unmargin">
         <ul class="nav">
             <li>
@@ -79,11 +99,10 @@
         </ul>
     </div>
 
+    <div class="title">
+        <h1>Table Docs</h1>
+    </div>
 
-
-
-
-<div class="grid-container">
     <div class="table">
         <table>
             <tr>
@@ -112,11 +131,20 @@
                 <td>Insert What it does</td>
             </tr>
         </table>
+
+        <div class="second-grid">
+            <div class="function-video">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lXh1MotyH2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="animated-words">
+                <h2>Watch to learn more</h2>
+            </div>
+        </div>
     </div>
 
-    <div class="title">
-        <h1>Table Docs</h1>
-    </div>
+
 
     <div class="subtitle">
         <h2>Here are a list of functions that might be useful for you to know.</h2>
