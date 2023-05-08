@@ -22,14 +22,19 @@
         grid-row: 2;
     }
 
+    .image{
+        grid-column: 1 / span 4;
+        grid-row: 3
+    }
+
     .subtitle{
         grid-column: 1 / span 4;
-        grid-row: 3;
+        grid-row: 4;
     }
 
     .table{
         grid-column: 1 / span 4;
-        grid-row: 4;
+        grid-row: 5;
     }
 
 
@@ -48,7 +53,7 @@
 
         table{
             width:100%;
-            background-color:rgb(168, 166, 171);
+            background-color:rgb(173, 172, 173);
             border-collapse: collapse; /*New Feature From W3schools and Stack Overflow*/ 
             
         }
@@ -58,12 +63,18 @@
             border-bottom: 2px solid #ddd; 
         }
  
-        tr:hover {background-color:rgb(159, 175, 180)} /*New Feature From W3schools*/
+        tr:nth-child(even){ /* New Feature from W3schools*/
+            background-color: rgb(155, 153, 153);
+        }
+
+        tr:hover {
+            background-color:rgb(159, 175, 180);
+        }
 
 
     .function-video{
         grid-column:2;
-        grid-row: 5;   
+        grid-row: 6;   
     }
 
 
@@ -73,13 +84,12 @@
 
     .animated-words{
         grid-column: 1;
-        grid-row: 5;
+        grid-row: 6;
         text-align: center;
         animation-name: words;
-        animation-duration: 2s;
+        animation-duration: 1.5s;
         animation-iteration-count: infinite;
-        animation-direction:alternate; /*New Feature From W3Schools */
-        
+        animation-direction:alternate; 
       
     }
 
@@ -94,7 +104,7 @@
             font-size: 23px;
         }
         to {
-            font-size: 27px;
+            font-size: 30px;
 
         }
     }
@@ -117,11 +127,11 @@
         </div>
     
         <div class=" grid-item title">
-            <h1 style="text-align: center; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50px ;">Table Docs</h1>
+            <h1 style="text-align: center; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px ;">Table Docs</h1>
         </div>
         
         <div class=" grid-item subtitle">
-            <h2 style="color:black; text-align: center;">Here are a list of methods that might be useful for you to know.</h2>
+            <p style="color:black; text-align: center; font-size: large;">Here are a list of methods that might be useful for you to know.</p>
         </div>
     
         <div class="table">
@@ -131,11 +141,14 @@
                     <th>Parameters</th>
                     <th>What it Does</th>
                 </tr>
+
                 <tr>
                     <td>System.out.println()</td>
                     <td>("string")</td>
                     <td>Prints a string</td>
+                    
                 </tr>
+
                 <tr>
                     <td>length()</td>
                     <td>("string")</td>
@@ -143,8 +156,8 @@
                 </tr>
                 <tr>
                     <td>charAt()</td>
-                    <td>(int of the index you want to return at)</td>
-                    <td>Returns the character at a certain index of the string</td>
+                    <td>(number to indicate what character of the word should be returned)</td>
+                    <td>Returns the character at a certain part of the string</td>
                 </tr>
                 <tr>
                     <td>split()</td>
@@ -189,7 +202,12 @@
         </div>
     
         <div class="animated-words">
-            <h2>Watch to learn about functions</h2>
+            <p><strong>Watch to learn about methods</strong></p>
+        </div>
+        
+
+        <div class="image">
+            <img style="width: 100%; height:450px;" src="images/computer-coding.jpg" alt="Artsy picture of computer programming code">
         </div>
     
     </div>
