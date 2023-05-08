@@ -1,23 +1,28 @@
 body {
-    background-color: rgb(59, 59, 59);
+    background-color: #4B39AD;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-ul {
-    color: rgb(216, 216, 216);
+.navmenu {
+    text-align: center;
+    padding: 0px;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    padding: 0px;
 }
 
 .nav{
     list-style-type: none;
-    background-color: rgb(128, 128, 128);
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-size: 40px;
+    background-color: #C59CDB;
 }
 
 .logo{
     width: 50px;
+    background-color: transparent;
 }
 
 ul.nav li {
@@ -28,17 +33,14 @@ ul.nav li {
 ul.nav li a{
     display: block;
     padding: 8px 16px;
-    color: rgb(216, 216, 216);
+    color: #000080;
     text-decoration: none;
 }
 ul.nav li a.logo-link-wrap{
     padding: 0px 0px;
 }
 ul.nav a:hover {
-    background-color: rgb(80, 80, 80);
-}
-.active {
-    background-color: rgb(45, 45, 45);
+    background-color: #7851a9;
 }
 .footer {
     position: fixed;
@@ -64,5 +66,5 @@ p,h1,h2,label,li,address  {
     font-size: small;
     text-align: left;
     padding: 20px;
-    background-color: aliceblue;
+    background-color: #C59CDB;
 }
