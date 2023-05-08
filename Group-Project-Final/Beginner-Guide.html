@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beginner's Guide</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+                .navmenu{
+            text-align: center;
+            padding: 0px;
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            padding: 0px;
+        }
+    </style>
 </head>
 <body>
-    <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="Beginner-Guide.html">Beginner Guide</a></li>
-        <li><a href="Code-Challenges.html">Code Challenges</a></li>
-        <li><a href="table-docs.html">Table Documents</a></li>
-        <li><a href="why-code.html">Why Code?</a></li>
-    </ul>
+    <div class="grid-container">
+        <div class="grid-item navmenu unmargin">
+            <ul class="nav">
+                <li>
+                    <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
+                </li>
+                <li class="active"><a href="Beginner-Guide.html">Beginner Guide</a></li>
+                <li><a href="Code-Challenges.html">Code Challenges</a></li>
+                <li><a href="table-docs.html">Table Documents</a></li>
+                <li><a href="why-code.html">Why Code?</a></li>
+            </ul>
+        </div>
     <h1>Beginner Guide to Java</h1>
     <div class="footer">
         <p>By: Kaleo Wolf🐺</p>
