@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mess Around </title>
+    <style>
+        #change {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's Learn Java Script</h1>
+    <h2>How do we do onclick events and alerts on an anchor</h2>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXk%3D" target="_blank" onclick="alert('Youw compute haf virus >w<, I sowwy bouwt dat -w-')">Definitely not a rick roll.</a>
+    <hr>
+    <h2>How do we display and hide text</h2>
+    <h2>What's the my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='One of them weirdos';document.getElementById('secret').style.display='block'">Reveal</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide</button>
+    <hr>
+    <h2>How do we change the image with JavaScript?</h2>
+    <img src="images/kirby-mouth-closed.jpg" alt="kirby with mouth closed" id="my-image">
+    <br>
+    <button onclick="document.getElementById('my-image').src='images/kirby-mouth-open.jpg'">Mouth Opener</button>
+    <button onclick="document.getElementById('my-image').src='images/kirby-mouth-closed.jpg'">Mouth Closener</button>
+    <hr>
+    <h2>How do we change CSS styles with a button?</h2>
+    <p id="alice">Hi I am Alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue';document.getElementById('alice').style.fontSize='10px'">shmol</button>
+    <button onclick="document.getElementById('alice').style.color='Red';document.getElementById('alice').style.fontSize='50px'">larg</button>
+    <button onclick="document.getElementById('alice').style.color='black';document.getElementById('alice').style.fontSize='30px'">.-.</button>
+    <hr>
+    <h2>How do we return user input with a function?</h2>
+    <button onclick = askName()>What is your name?</button>
+    <p id="ask-name"></p>
+    <script>
+        function askName(){
+            let nameParagraph = document.getElementById("ask-name");
+            let name = prompt("What is our name?");
+            // now lets decide what to do
+            if (name === "manbat"){
+                nameParagraph.innerHTML = "This is a line of text that you just read and I just wrote."
+            } else {
+                nameParagraph.innerHTML = "Hello " + name + "!"            
+            }     
+        }
+    </script>
+    <hr>
+    <p id="change">Change the elements, <br>
+        example text.</p>
+    <button onclick="document.getElementById('change').style.borderRadius='10px'">roundener</button>
+    <button onclick="document.getElementById('change').style.letterSpacing='5px'">letter spacener</button>
+    <button onclick="document.getElementById('change').style.borderRadius='0px';document.getElementById('change').style.letterSpacing='0px'">resetener</button>
+</body>
+</html>
