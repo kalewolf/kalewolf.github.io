@@ -7,14 +7,85 @@
     <title>Beginner's Guide</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-                .navmenu{
+        .navmenu{
             text-align: center;
             padding: 0px;
             grid-column: 1 / span 4;
             grid-row: 1;
             padding: 0px;
         }
+        .title{
+            grid-column: 1 / span 4;
+            grid-row: 2;
+            text-align: center;
+        }
+        .subtitle-1{
+            grid-column: 1;
+            grid-row: 3;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .topic-1{
+            grid-column: 1;
+            grid-row: 4;
+            text-align: center;
+        }
+        .imageexample-1{
+            grid-column: 2 / span 3;
+            grid-row: 3 / span 2;
+            text-align: center;
+        }
+        .subtitle-2{
+            grid-column: 4;
+            grid-row: 5;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .topic-2{
+            grid-column: 4;
+            grid-row: 6;
+            text-align: center;
+        }
+        .imageexample-2{
+            grid-column: 1 / span 3;
+            grid-row: 5 / span 2;
+            text-align: center;
+        }
+        .subtitle-3{
+            grid-column: 1;
+            grid-row: 7;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .topic-3{
+            grid-column: 1;
+            grid-row: 8;
+            text-align: center;
+        }
+        .imageexample-3{
+            grid-column: 2 / span 3;
+            grid-row: 7 / span 2;
+            text-align: center;
+        }
+        .grid-item{
+            border-radius: 10px;
+        }
+        .image-1{
+            width: 90%;
+        }
+        .image-2{
+            width: 90%;
+        }
+        .image-3{
+            width: 90%;
+        }
+        .kale-footer{
+            grid-column: 1 / span 4;
+            grid-row: 9;
+            text-align: center;
+        }
     </style>
+    <link rel="stylesheet" href="https://use.typekit.net/byl7jce.css">
 </head>
 <body>
     <div class="grid-container">
@@ -29,8 +100,25 @@
                 <li><a href="why-code.html">Why Code?</a></li>
             </ul>
         </div>
-    <h1>Beginner Guide to Java</h1>
-    <div class="footer">
-        <p>By: Kaleo Wolf🐺</p>
+            <div class="grid-item title"><h1>Beginner Guide to Java</h1></div>
+            <div class="subtitle-1 grid-item">Variables</div>
+            <div class="subtitle-2 grid-item">Classes and Objects</div>
+            <div class="subtitle-3 grid-item">Arrays</div>
+            <div class="topic-1 grid-item">Once you have a basic understanding of computer code the first thing that you will want to try is creating a variable. The way that you create a variable in Java is by first stating the variable type such as int, string, float, char, or boolean. Next you will state your variable name, and make sure that this name is understandable and concise so that it can be easily used later. Using this variable you can also create a print statement in order to return the value of your variable. In java a print statement follows the syntax System.out.println(); with your variable name in the paranthesis.</div>
+            <div class="topic-2 grid-item">Because Java is an object oriented program, class structures can be intergral. A class structure is a piece of code used to create and describe attributes given to an object. For our example I will use dog breeds and the different traits that they have.</div>
+            <div class="topic-3 grid-item">Arrays are a piece of code that can be used to store a list of data. This is commonly utilized in lists of stored values or data sets that need to be grouped. Creating a Array follows the syntax of value_type array_name[] = new value_type[# of items in the array] and changing the value of an item in an array follows the syntax array_name[# corresponding to item in the list] = new_value.</div>
+            <div class="imageexample-1 grid-item">
+                <label for="image-1">Variable Example:<br>
+                </label>
+                <img src="images/Java_Variable_EX.png" alt="Java variable example" class="image-1 grid-item "></div>
+            <div class="imageexample-2 grid-item">
+                <label for="image-2">Class Example:<br></label>
+                <img src="images/Java_Class_EX.png" alt="Java class example" class="image-2 grid-item"></div>
+            <div class="imageexample-3 grid-item">
+                <label for="image-3">Array Example:<br></label>
+                <img src="images/Java_Array_EX.png" alt="Java array example" class="image-3 grid-item"></div>
+            <div class="kale-footer grid-item"><p>By: Kaleo Wolf🐺</p></div>
+    </div>
+
 </body>
 </html>

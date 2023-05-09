@@ -6,46 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why You Should Learn to Code</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/byl7jce.css">
 </head>
 
 <style>
-    .footer{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: azure;
-        color:black;
-        text-align: center; 
+    .navmenu{
+            text-align: center;
+            padding: 0px;
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            padding: 0px;
+        }
+    
+    .title{
+            grid-column:1 / span 4;
+            grid-row: 2;
+            
+        }
+    .title.h1{
+        margin: 0px;
     }
+    
+    .image{
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+
+
+    .problem-solving{
+        grid-column: 1;
+        grid-row: 4;   
+    }
+
+    .tech-future{
+        grid-column: 2 ;
+        grid-row: 4; 
+    }
+
+    .job-opportunities{
+        grid-column: 3;
+        grid-row: 4;   
+    }
+
+    .creativity{
+        grid-column: 4;
+        grid-row: 4;   
+    }
+
+    .video{
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .animated-words{
+        grid-column: 1;
+        grid-row: 5;
+        text-align: center;
+        animation-name: words;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate; 
+        
+      
+    }
+
+    .grid-item{
+        color:black;
+    }
+
+    .grid-item.title{
+        background-color:#8a2be2;
+    }
+
+    @keyframes words {
+
+        from{
+            font-size: 22px;
+        }
+        to {
+            font-size: 30px;
+
+        }
+    }
+
 </style>
 
 <body>
-    <ul class="nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
-        <li><a href="Code-Challenges.html">Code Challenges</a></li>
-        <li><a href="table-docs.html">Table Documents</a></li>
-        <li><a href="why-code.html">Why Code?</a></li>
-    </ul>
 
-    <h1>Why You Should Learn to Code</h1> <br>
+    <div class="grid-container">
+        <div class="grid-item navmenu unmargin">
+            <ul class="nav">
+                <li>
+                    <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
+                </li>
+                <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
+                <li><a href="Code-Challenges.html">Code Challenges</a></li>
+                <li><a href="table-docs.html">Table Documents</a></li>
+                <li  class="active"><a href="why-code.html">Why Code?</a></li>
+            </ul>
+        </div>
 
-    <h2>Coding helps your problem solving skills</h2>
-    <p>insert more writing here</p> <br>
+        <div class=" grid-item title">
+            <h1 style="text-align: center; color: white;">Why You Should Learn to Code</h1> <br>
+        </div>
 
-    <h2>Lots of Job Oppurtunities</h2>
-    <p>insert more writing here</p> <br>
 
-    <h2>Technologies are the Future</h2>
-    <p>insert more writing here</p> <br>
+        <div class="grid-item problem-solving">
+            <h2 style="color:black;">Coding helps your problem solving skills</h2>
+            <p style="color:black;">When coding, you are always trying to complete some sort of task or challenge, so applying what you know to perform a task requires you to use your brain. Also, when coding, you will inevitably face bugs and challenges, so working your way around them will also strengthen your problem-solving.<p> <br>
+        </div>
     
-    <h2>You Can Express Your Creativity</h2>
-    <p>insert more writing here</p> <br>
+        <div class="grid-item job-opportunities">
+            <h2 style="color:black;">Lots of Job Opportunities</h2>
+            <p style="color:black;">Due to the boom in technology, there is a high demand for programmers. Even if you don't want to go into a computer science field, you may end up working with programmers at some point. In that case, it would be helpful to have some understanding of coding, because this may improve your ability to work together as a team.</p> <br>
+        </div>
+    
+        <div class="grid-item tech-future">
+            <h2 style="color:black;">Technologies are the Future</h2>
+            <p style="color:black;">Technology is everywhere and it's becoming more and more advanced and widespread with every day. Due to this surge, it may be nice to understand what goes on behind the scenes of all these technologies that we use every day. You might find it interesting to learn about the coding behind emails, internet search engines, online shopping and more. </p> <br>
+        </div>
+    
+        <div class="grid-item creativity">
+            <h2 style="color:black;">You Can Express Your Creativity</h2>
+            <p style="color:black;">With coding, you are able to work on a wide variety of projects of your choice. You could make a website, a game, a choose your own adventure story, or any project that interests you. It can be seen as an art form in a way, since you put together the pieces of a project to make a nice finished result, that will feel gratifying in the end.</p> <br>
+        </div>
 
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_zfXWElRdik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="animated-words">
+            <p><strong>Watch to learn more</strong></p>
+        </div>
+
+        <div class="image">
+            <img style="width: 100%; height:450px;" src="images/programming-languages.jpg" alt="Screen with writing of all the different programming languages">
+        </div>
+
+    </div>
 
     <div class="footer">
-        <p>Made by Arya Kuttiyan</p>
+        <p>By Arya Kuttiyan</p>
     </div>
 </body>
 </html>

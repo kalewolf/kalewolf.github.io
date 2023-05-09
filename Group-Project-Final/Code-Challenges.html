@@ -8,13 +8,54 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .navmenu{
-        text-align: center;
-        padding: 0px;
-        grid-column: 1 / span 4;
-        grid-row: 1;
-        padding: 0px;
+            text-align: center;
+            padding: 0px;
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            padding: 0px;
+        }
+        .title{
+            grid-column: 1 / span 4;
+            grid-row: 2;
+            text-align: center;
+        }
+        .challenge-1{
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .expected-1{
+            grid-column: 3 / span 2;
+            grid-row: 3;
+        }
+        .challenge-2{
+            grid-column: 4;
+            grid-row: 4;
+        }
+        .expected-2{
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+        .challenge-3{
+            grid-column: 1;
+            grid-row: 5;
+        }
+        .expected-3{
+            grid-column: 3 / span 2;
+            grid-row: 5;
+        }
+        .challenge-4{
+            grid-column: 4;
+            grid-row: 6;
+        }
+        .expected-4{
+            grid-column: 1 / span 2;
+            grid-row: 6;
+        }
+        .footer{
+            text-align: center;
         }
     </style>
+    <link rel="stylesheet" href="https://use.typekit.net/byl7jce.css">
 </head>
 <body>
     <div class="grid-container">
@@ -29,8 +70,25 @@
                 <li><a href="why-code.html">Why Code?</a></li>
             </ul>
         </div>
-    <h1>Code Challenges to Practice Java</h1>
-    <div class="footer">
-        <p>By: Kaleo Wolf🐺</p>
+        <div class="grid-item title"><h1>Code Challenges to Practice Java</h1></div>
+        <div class="challenge-1 grid-item">Can you make a variable that stores the value 10 and print it out?</div>
+        <div class="challenge-2 grid-item">Can you make a class for someone's name, age, height, and print it out? </div>
+        <div class="challenge-3 grid-item">Can you make an array with the values 2, 4, 6, 8, 10 and print it out?</div>
+        <div class="challenge-4 grid-item">challenge 4</div>
+        <div class="expected-1 grid-item">"10" or "variable_name = 10"</div>
+        <div class="expected-2 grid-item">"class_name or person's_name<br>
+            name = person's_name <br>
+            age = person's_age <br>
+            height = person's_height <br>
+        </div>
+        <div class="expected-3 grid-item">array_name[0] = 2 <br>
+            array_name[1] = 4 <br>
+            array_name[2] = 6<br>
+            array_name[3] = 8<br>
+            array_name[4] = 10<br>
+        </div>
+        <div class="expected-4 grid-item">expected ouput 4</div>
+        <div class="footer grid-item"><p>By: Kaleo Wolf🐺</p></div>
+    </div>
 </body>
 </html>

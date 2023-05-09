@@ -6,72 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Docs</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/byl7jce.css">
 </head>
 
 <style>
-    .footer{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: azure;
-        color:black;
-        text-align: center; 
+    .navmenu{
+        text-align: center;
+        padding: 0px;
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        padding: 0px;
     }
 
+    .title{
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+
+    .image{
+        grid-column: 1 / span 4;
+        grid-row: 3
+    }
+
+    .subtitle{
+        grid-column: 1 / span 4;
+        grid-row: 4;
+    }
+
+    .table{
+        grid-column: 1 / span 4;
+        grid-row: 5;
+    }
+
+
+ 
+    
     table,
         th,
         td {
-            border: 1px solid black;
-            border-collapse: collapse;
             padding: 10px;
         }
 
         th{
-            background-color:purple;
-            color: white
+            background-color:#8a2be2;
+            color: white;
+        }
+
+        table{
+            width:100%;
+            background-color:rgb(173, 172, 173);
+            border-collapse: collapse; /*New Feature From W3schools and Stack Overflow*/ 
+            
+        }
+
+       
+        tr{
+            border-bottom: 2px solid #ddd; 
+        }
+ 
+        tr:nth-child(even){ /* New Feature from W3schools*/
+            background-color: rgb(155, 153, 153);
+        }
+
+        tr:hover {
+            background-color: #C59CDB;
+        }
+
+
+    .function-video{
+        grid-column:2;
+        grid-row: 6;   
+    }
+
+
+    .grid-item.title{
+       background-color:#8a2be2;
+    }
+
+    .animated-words{
+        grid-column: 1;
+        grid-row: 6;
+        text-align: center;
+        animation-name: words;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate; 
+      
+    }
+
+    .grid-item{
+        color:black;
+    }
+
+    
+    @keyframes words {
+
+        from{
+            font-size: 23px;
+        }
+        to {
+            font-size: 30px;
 
         }
+    }
+
 </style>
 <body>
-    <ul class="nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
-        <li><a href="Code-Challenges.html">Code Challenges</a></li>
-        <li><a href="table-docs.html">Table Documents</a></li>
-        <li><a href="why-code.html">Why Code?</a></li>
-    </ul>
 
-    <h1>Table Docs</h1>
-    <h2>Here are a list of functions that might be useful for you to know.</h2>
+    <div class="grid-container">
+
+        <div class="grid-item navmenu unmargin">
+            <ul class="nav">
+                <li>
+                    <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
+                </li>
+                <li><a href="Beginner-Guide.html">Beginner Guide</a></li>
+                <li><a href="Code-Challenges.html">Code Challenges</a></li>
+                <li class="active"><a href="table-docs.html">Table Documents</a></li>
+                <li><a href="why-code.html">Why Code?</a></li>
+            </ul>
+        </div>
     
-    <table>
-        <tr>
-            <th>Function Name</th>
-            <th>Parameters</th>
-            <th>What it Does</th>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-        <tr>
-            <td>Insert Function</td>
-            <td>Insert Parameters</td>
-            <td>Insert What it does</td>
-        </tr>
-    </table>
+        <div class=" grid-item title">
+            <h1 style="text-align: center; color: white; font-size: 40px ;">Table Docs</h1>
+        </div>
+        
+        <div class=" grid-item subtitle">
+            <p style="color:black; text-align: center; font-size: large;">Here are a list of methods that might be useful for you to know.</p>
+        </div>
+    
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Method Name</th>
+                    <th>Parameters</th>
+                    <th>What it Does</th>
+                </tr>
+
+                <tr>
+                    <td>System.out.println()</td>
+                    <td>("string")</td>
+                    <td>Prints a string</td>
+
+                </tr>
+
+                <tr>
+                    <td>length()</td>
+                    <td>("string")</td>
+                    <td>This tells you how many characters are in a string</td>
+                </tr>
+                <tr>
+                    <td>charAt()</td>
+                    <td>(number to indicate what character of the word should be returned)</td>
+                    <td>Returns the character at a certain part of the string</td>
+                </tr>
+                <tr>
+                    <td>split()</td>
+                    <td>("character that the string should split at")</td>
+                    <td>Splits a string at the desired character</td>
+                </tr>
+                <tr>
+                    <td>Integer.parseInt()</td>
+                    <td>("string")</td>
+                    <td>Converts a string to an int</td>
+                </tr>
+                <tr>
+                    <td>replace()</td>
+                    <td>("character you want replaced", "character you are replacing with")</td>
+                    <td>Replaces character(s) in a string with a different character</td>
+                </tr>
+                <tr>
+                    <td>floor()</td>
+                    <td>(int number)</td>
+                    <td>Rounds down number to the nearest integer</td>
+                </tr>
+                <tr>
+                    <td>max()</td>
+                    <td>(integer, integer)</td>
+                    <td>Returns the integer of the highest value</td>
+                </tr>
+                <tr>
+                    <td>min()</td>
+                    <td>(integer, integer)</td>
+                    <td>Returns integer of the lowest value</td>
+                </tr>
+                <tr>
+                    <td>equals()</td>
+                    <td>("string")</td>
+                    <td>Looks at 2 stings as returns true if they are equal</td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="function-video">
+            <iframe width="624" height="351" src="https://www.youtube.com/embed/SkVDfaHQwRU" title="Java Programming #10 - Defining Methods and Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    
+        <div class="animated-words">
+            <p><strong>Watch to learn about methods</strong></p>
+        </div>
+        
+
+        <div class="image">
+            <img style="width: 100%; height:450px;" src="images/computer-coding.jpg" alt="Artsy picture of computer programming code">
+        </div>
+    
+    </div>
+   
 
     <div class="footer">
         <p>Made by Arya Kuttiyan</p>

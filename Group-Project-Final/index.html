@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home - Learning Java</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/byl7jce.css">
     <style>
-        .navmenu{
-            text-align: center;
-            padding: 0px;
+        .title{
+            background-color: #8a2be2;
             grid-column: 1 / span 4;
-            grid-row: 1;
-            padding: 0px;
+            grid-row: 2;
+            text-align: center;
+        }
+
+        .title h1{
+            font-size: 50px;
+            margin: 0px;
         }
 
         .main-image{
+            /* New Feature: Background Transparent */
             padding: 0px;
             grid-column: 1 / span 3;
-            grid-row: 2;
+            grid-row: 3;
             background-color: transparent;
         }
 
@@ -29,70 +35,54 @@
         }
 
         .description{
+            /* New Feature: Max Width */
             grid-column: 4;
-            grid-row: 2;
+            grid-row: 3;
+            max-width: 250px;
         }
 
         .main1{
             grid-column: 1 / span 2;
-            grid-row: 3;
+            grid-row: 4;
+            max-width: 610px;
         }
 
         .main2{
             grid-column: 3;
-            grid-row: 3;
+            grid-row: 4;
         }
 
         .resources{
             grid-column: 4;
-            grid-row: 3 / span 2;
+            grid-row: 4 / span 2;
+            max-width: 250px;
         }
 
         .video{
             grid-column: 1 / span 2;
-            grid-row: 4;
+            grid-row: 5;
             padding: 0% 0%;
             margin: 0%;
             background-color: transparent;
         }
 
         .video iframe{
-            /* original size 560px*315px, scale up 155% */
-            width: 868px;
-            height: 488px;
+            /* original size 560px*315px, scale up 15% */
+            width: 644px;
+            height: 362px;
             display: block;
             margin: 0 auto;
         }
 
-        .video-description{
-            grid-column: 3;
-            grid-row: 4;
-        }
-
         .main3{
-            grid-column: 1;
+            grid-column: 3;
             grid-row: 5;
-        }
-
-        .main4{
-            grid-column: 2;
-            grid-row: 5;
-        }
-
-        .main5{
-            grid-column: 3  / span 2;
-            grid-row: 5;
-        }
-
-        .why-java{
-            grid-column: 1 / span 4;
-            grid-row: 6;
         }
 
         .bottom-section{
-            grid-row: 7;
+            grid-row: 6;
             grid-column: 1 / span 4;
-            /* make a mini grid */
+            /* New Feature: Nested Grid */
             display:grid;
             grid-template-columns: 25% 25% 25% 23%;
             grid-template-rows: auto auto auto;
@@ -107,7 +97,6 @@
             font-size: small;
             text-align: left;
             padding: 20px;
-            background-color: aliceblue;
         }
 
         .bot-logo.a.img{
@@ -133,11 +122,35 @@
             grid-column: 4;
             grid-row: 1;
         }
+
+        .download tr, td{
+            border: 3px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        
+        .download table {
+            /* New Feature: Table Border Collapse */
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        tr:nth-child(even) {
+            /* New Feature: Table Alternate Color */
+            background-color: #CDB0EE;
+        }
     </style>
 </head>
 <body>
     <div class="grid-container">
-        <div class="grid-item navmenu unmargin">
+        <div class="grid-item title">
+            <h1>
+                Home - Java Learner
+            </h1>
+        </div>
+
+        <div class="navmenu">
             <ul class="nav">
                 <li class="active">
                     <a href="index.html" class="logo-link-wrap"><img class="logo" src="images/java.png" alt="Java Logo - Java Tutorial"></a>
@@ -150,30 +163,149 @@
         </div>
 
         <div class="grid-item main-image">
-            <img src="images\nathanbg.jfif" alt="Placeholder Image">
+            <img src="images\homepage_main_pic.webp" alt="Java Programming Image">
         </div>
 
-        <div class="grid-item description"> description of the image. This image to the left is a placeholder for now </div>
+        <div class="grid-item description"> 
+            <p style="margin: 0px;">
+                Programming is getting more and more popular in the modern age. 
+                As we step more and more into the digital world, it's likely that to succeed in the future we would need to understand how to code.
+                Java is special in the programming field because it's the most universal language - it works on every single platform and OS, which
+                means you only need to learn Java in order to program anywhere, and most people would understand it.
 
-        <div class="grid-item main1">m1</div>
+                (Image source: <a target="_blank" href="https://content.techgig.com/technology-guide/what-makes-java-still-popular-among-developers/articleshow/93000110.cms">Techgig</a>)
+            </p>
+        </div>
 
-        <div class="grid-item main2">m2</div>
+        <div class="grid-item main1">
+            <h2>
+                Coding in Seattle
+            </h2>
+            <p style="margin: 0px;">
+                Seattle is one of the most important cities for tech. It is the home of multiple tech giants (Microsoft, Google, etc).
+                It is also full of multiple tech startups. This combination means that <a target="_blank" href="https://www.cbre.com/press-releases/seattle-leads-u-s-markets-in-tech-job-creation-in-cbres-annual-scoring-tech-talent-report#:~:text=The%20market%2C%20which%20encompasses%20Seattle,market%20average%20of%205.6%20percent.">9.9%</a> of Seattle citizens are employed in Tech talent jobs.
+                Further, this abundance of tech grew with the pandemic as other companies had to fire workers to conserve money and stay safe, but most tech companies had access to remote working technology, and were able to keep most of their workers.
+                According to <a target="_blank" href="https://www.nytimes.com/2021/10/12/business/seattle-real-estate-coronavirus.html">The New York Times</a>, "A confluence of factors spurred Seattle’s popularity. The technology sector grew during the pandemic as Americans worked, shopped and entertained themselves from home; tech companies expanded their footprint in Seattle, attracted by a deep talent pool and a stream of graduates from local colleges; and the area just beyond the city had plenty of undeveloped land."
+                This combined makes seattle one of the most tech oriented American Cities, and it has the potential to lead the world towards the future of technology.
+                <br><br>
+                These tech companies in Seattle also have a history of fusing Programming and other fields, like Robotics or Computers. Famous tech inventions like the wireless telephone, CDs, and more came from Seattle.
+                Famous companies and people in seattle include:
+                <ul>
+                    <li>
+                        Bill Gates and Microsoft
+                    </li>
+                    <li>
+                        Tim Paterson, creator of the Intel OS
+                    </li>
+                    <li>
+                        Google
+                    </li>
+                    <li>
+                        Amazon
+                    </li>
+                </ul>
+                As a city full of top programmers and companies, knowing how to program can be very useful, from acquiring a job to understanding how to fix errors from seattle-leads-u-s-markets-in-tech-job-creation-in-cbres-annual-scoring-tech-talent-report# made by these companies.
+            </p>
+        </div>
 
-        <div class="grid-item resources">resource</div>
+        <div class="grid-item main2">
+            <h2>
+                Why Java?
+            </h2>
+            <p style="margin: 0px;">
+                Java has a lot of advantages over the average programming language
+                <ul>
+                    <li>
+                        Easy to Learn: has many tutorials and can be easily picked up
+                    </li>
+                    <li>
+                        Universal: Functions on every OS and Platform
+                    </li>
+                    <li>
+                        Extensive APIs: a lot of packages to do everything
+                    </li>
+                    <li>
+                        Great Documentation: easy to understand how a method works
+                    </li>
+                    <li>
+                        Continually Updating: Bug fixes and new features are released regularly
+                    </li>
+                    <li>
+                        Best language for App Development, especially for Android Apps
+                    </li>
+                    <li>
+                        Faster than python because it's a different type of language
+                    </li>
+                </ul>
+                (Source: <a target="_blank" href="https://content.techgig.com/technology-guide/what-makes-java-still-popular-among-developers/articleshow/93000110.cms">Techgig</a>)
+            </p>
+        </div>
+
+        <div class="grid-item resources">
+            <h2>
+                Resources
+            </h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://docs.oracle.com/en/java/">Official Java Documentation</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://stackoverflow.com/">Stack Overflow, Popular website to post problems and solutions</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="grid-item video">
             <iframe src="https://www.youtube.com/embed/mAtkPQO1FcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <div class="grid-item video-description">video disc</div>
-
-        <div class="grid-item main3">m3</div>
-
-        <div class="grid-item main4">m4</div>
-
-        <div class="grid-item main5">m5</div>
-
-        <div class="grid-item why-java">why java?</div>
+        <div class="grid-item main3">
+            <h2>
+                New Developments in Code
+            </h2>
+            <p style="margin: 0px;">
+                Recent developments in code are shaping our future:
+                <ul>
+                    <li>
+                        Chatbots: Bing and ChatGPT
+                    </li>
+                    <li>
+                        Increase in amounts of coding companies
+                    </li>
+                    <li>
+                        <details>
+                            <summary>
+                                Creation of a bunch of new inventions
+                            </summary>
+                            <ul>
+                                <li>
+                                    5G Network
+                                </li>
+                                <li>
+                                    AI and Maching Learning
+                                </li>
+                                <li>
+                                    Automation
+                                </li>
+                                <li>
+                                    Blockchain
+                                </li>
+                                <li>
+                                    Cyber Security Developments
+                                </li>
+                                <li>
+                                    Voice Tech
+                                </li>
+                                <li>
+                                    Virtual Reality
+                                </li>
+                            </ul>
+                        </details>
+                        (Source: <a href="https://atztechnology.com/list-of-latest-technologies-in-computer-science/" target="_blank">AtZ Tech</a>)
+                    </li>
+                </ul>
+            </p>
+        </div>
 
         <div class="grid-item bottom-section">
             <div class="grid-item bot-logo">
@@ -182,24 +314,94 @@
                 </a>
             </div>
 
-            <div class="grid-item about">
-                <h1>
+            <div class="grid-item about" style="font-size: small;">
+                <h2 style="font-size: 30px;">
                     About
-                </h1>
+                </h2>
+                Home/CSS: Ryan Li
+                <br>
+                Guide/Challenges: Kaleo Wolf
+                <br>
+                Docs/Why Code: Arya Kuttiyan
+                <br>
+                Special thanks to Sudo Sensei
             </div>
 
-            <div class="grid-item download">
-                <h1>
+            <div class="grid-item download" style="font-size: small;">
+                <h2 style="font-size: 30px;">
                     Downloads
-                </h1>
+                </h2>
+                <table>
+                    <tr>
+                        <th>
+                            Download
+                        </th>
+                        <th>
+                            Purpose
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.java.com/en/download/manual.jsp">Java</a>
+                        </td>
+                        <td>
+                            Required to run Java code
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.jetbrains.com/idea/download/#section=windows">Intellij IDEA</a>
+                        </td>
+                        <td>
+                            An IDE for Java - Allows you to run Java code
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://developer.android.com/studio?gclid=Cj0KCQjwmN2iBhCrARIsAG_G2i4YrsK_I6RUM-VrejbsOzh6F_6sRj6_Rp3_l5fMDgV-DRP-vIRmCb8aAkzhEALw_wcB&gclsrc=aw.ds">Android Studio</a>
+                        </td>
+                        <td>
+                            Another IDE for Java - Specialized to creating Android Apps
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.eclipse.org/ide/">Eclipse</a>
+                        </td>
+                        <td>
+                            Another IDE for Java, similar to Intellij IDEA
+                        </td>
+                    </tr>
+                </table>
             </div>
 
-            <div class="grid-item more">
-                <h1>
+            <div class="grid-item more"  style="font-size: small;">
+                <h2 style="font-size: 30px;">
                     More Tutorials
-                </h1>
+                </h2>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.w3schools.com/java/">W3Schools</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://docs.oracle.com/javase/tutorial/">Oracle, the Java Documentation website</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.tutorialspoint.com/java/index.htm">TutorialsPoint</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.javatpoint.com/java-tutorial">JavaTPoint</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.geeksforgeeks.org/java-tutorial/">GeeksForGeeks</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
+
+    <div class="footer">
+        By Ryan Li
     </div>
 </body>
 </html>
