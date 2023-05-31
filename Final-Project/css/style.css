@@ -4,7 +4,7 @@ body {
 }
 
 #title {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
     grid-row: 1;
 }
 #nav-bar {
@@ -24,9 +24,11 @@ body {
     padding: 20px;
     background-color: rgb(50,50,50);
     box-shadow: 0 10px rgba(84, 0, 0, 1);
+    color: white;
+    text-align:center;
 }
 #book-list{
-    grid-row: 3;
+    grid-row: 3 / span 2;
     grid-column: 1 / span 2;
 }
 .nav{
@@ -61,13 +63,80 @@ ul.nav a:hover {
     grid-template-rows: auto auto auto;
     gap: 10px 10px;
 }
-
-#title-text-1 {
-    grid-row: 1;
-    grid-column: 1;
-}
-
 #title-img-1 {
     grid-row: 1;
     grid-column: 2;
+}
+#title-text-1 {
+    grid-row: 1;
+    grid-column: 1
+}
+.store-front-photo {
+    grid-row: 3;
+    grid-column: 3 / span 2;
+    color: white;
+}
+#shopping-cart {
+    padding: auto auto;
+}
+
+#accessibility {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+#History {
+    grid-row: 3;
+    grid-column: 3 / span 2;
+}
+#collective {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+#distribution {
+    grid-row: 4;
+    grid-column: 3 / span 2;
+}
+#submissions {
+    grid-row: 5;
+    grid-column: 1 / span 4;
+}
+#publishing-project {
+    grid-row: 3 / span 4;
+    grid-column: 1 / span 2;
+}
+#open-mic {
+    grid-row: 3;
+    grid-column: 1 / span 4;
+}
+#anarchism-event {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+#abolition-event {
+    grid-row: 4;
+    grid-column: 3 / span 2;
+}
+#self-publishing {
+    grid-row: 3;
+    grid-column: 1 / span 4;
+}
+#new-arrivals {
+    grid-row: 4;
+    grid-column: 1 / span 4;
+}
+#staff-picks {
+    grid-row: 5;
+    grid-column: 1 / span 4;
+}
+#featured-fiction {
+    grid-row: 6;
+    grid-column: 1 / span 4;
+}
+#books-to-prisoners {
+    grid-row: 3;
+    grid-column: 3 / span 2;
+}
+#volunteering {
+    grid-row: 4;
+    grid-column: 3 / span 2;
 }
