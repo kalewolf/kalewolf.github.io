@@ -70,3 +70,8 @@ function TTaaL1() {
     }
 }
 
+function TTaaL2() {
+    let TTaaL2Answer = document.getElementById("TTaaL2-answer").checked;
+    
+}
+
